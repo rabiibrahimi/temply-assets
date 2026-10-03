@@ -1,0 +1,71 @@
+{
+  "root": {
+    "type": "EmailLayout",
+    "data": {
+      "backdropColor": "#F5F5F5",
+      "canvasColor": "#FFFFFF",
+      "textColor": "#262626",
+      "accentColor": "#0079CC",
+      "fontFamily": "MODERN_SANS",
+      "childrenIds": ["heading", "intro", "button", "divider", "columns"]
+    }
+  },
+  "heading": {
+    "type": "Heading",
+    "data": {
+      "props": { "text": "Welcome to Templify", "level": "h2" },
+      "style": { "padding": { "top": 32, "bottom": 8, "left": 24, "right": 24 } }
+    }
+  },
+  "intro": {
+    "type": "Text",
+    "data": {
+      "props": { "text": "This is a small example template. Import it, then change or add blocks in the builder." },
+      "style": { "padding": { "top": 0, "bottom": 16, "left": 24, "right": 24 } }
+    }
+  },
+  "button": {
+    "type": "Button",
+    "data": {
+      "props": { "text": "Get started", "url": "https://example.com", "buttonStyle": "rounded", "size": "medium" },
+      "style": { "padding": { "top": 8, "bottom": 24, "left": 24, "right": 24 } }
+    }
+  },
+  "divider": {
+    "type": "Divider",
+    "data": {
+      "props": { "lineColor": "#E5E5E5" },
+      "style": { "padding": { "top": 8, "bottom": 8, "left": 24, "right": 24 } }
+    }
+  },
+  "columns": {
+    "type": "ColumnsContainer",
+    "data": {
+      "props": {
+        "columnsCount": 2,
+        "columnsGap": 16,
+        "stackOnMobile": true,
+        "mobileStackOrder": "ltr",
+        "columns": [
+          { "childrenIds": ["column-1"] },
+          { "childrenIds": ["column-2"] },
+          { "childrenIds": [] },
+          { "childrenIds": [] }
+        ]
+      },
+      "style": { "padding": { "top": 16, "bottom": 32, "left": 24, "right": 24 } }
+    }
+  },
+  "column-1": {
+    "type": "Text",
+    "data": {
+      "props": { "markdown": true, "text": "**Left column**\n\nColumns sit side by side on desktop and stack on phones." }
+    }
+  },
+  "column-2": {
+    "type": "Text",
+    "data": {
+      "props": { "markdown": true, "text": "**Right column**\n\nAdd any block to a column: text, buttons, images and more." }
+    }
+  }
+}

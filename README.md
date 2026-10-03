@@ -1,6 +1,6 @@
 # temply-assets
 
-Public, static assets used by emails built with Temply Builder. Email clients (Gmail, Outlook, etc.) must be able to fetch these images anonymously, so this repo is public. It contains images only, no code.
+Public, static assets used by emails built with Templify. Email clients (Gmail, Outlook, etc.) must be able to fetch these images anonymously, so this repo is public. It contains images and example templates only, no code.
 
 Served via jsDelivr, pinned to a tag:
 
@@ -21,6 +21,14 @@ PNG at 2x (192px tall) for retina; editable SVG sources are in `play/svg/`.
 | `pill` | `pill-dark`, `pill-light`, `pill-red` |
 
 `dark` = translucent black with white ring, `light` = white with dark triangle, `red` = red with white triangle.
+
+## Example template (`examples/`)
+
+`examples/email-template.json`: a short template in the builder's JSON format (Heading, Text, Button, Divider and two Columns), linked from the builder's **Import JSON** dialog. Available from `@v2`:
+
+```
+https://cdn.jsdelivr.net/gh/rabiibrahimi/temply-assets@v2/examples/email-template.json
+```
 
 ## Release rules
 
